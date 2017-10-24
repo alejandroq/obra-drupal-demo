@@ -87,11 +87,10 @@ theme_install()
     git submodule init;
     git submodule update;
 
-#    echo "Enabling Obra-Theme as default theme (NOTE: not Admin)..."
-#    cd $DOCROOT_PATH;
-#    drush config-set system.theme default obra-theme -y;
-
-    echo "Enable Obra-Theme manually within Drupal 8 UI. Auto-set to be added..."
+    echo "Enabling Obra-Theme as default theme (NOTE: not Admin)..."
+    cd $DOCROOT_PATH;
+    drush en obra_theme -y;
+    drush config-set system.theme default obra_theme -y;
 }
 
 theme_build()
