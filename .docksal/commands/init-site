@@ -95,7 +95,7 @@ theme_install()
 theme_build()
 {
     cd $DOCROOT_PATH/themes/custom/obra-theme;
-    bower-install;
+    bower install;
     cd $DOCROOT_PATH/themes/custom/obra-theme/elements;
     polymer build;
 }
