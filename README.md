@@ -43,11 +43,11 @@ When the automated install is complete the command line output will display the 
 
 # Goals
 - [X] Utilize Drupal Composer + Docksal for Dependency and Container management appropriately
-- [ ] Setup Obra Theme via Git Submodules
+- [X] Setup Obra Theme via Git Submodules
     - [ ] `fin init` enables theme via Drush  
 
 # Stretch Goals
-- [ ] Total Encapsulation in Docker Containers (Polymer CLI, Babel, etc)
+- [X] Total Encapsulation in Docker Containers (Polymer CLI, Babel, etc)
 - [ ] QA
     - [ ] TravisCI CI/CD (Composer + Polymer)
     - [ ] SauceLabs Cross-Browser Verification
