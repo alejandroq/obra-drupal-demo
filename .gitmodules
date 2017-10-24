@@ -1,0 +1,3 @@
+[submodule "web/themes/custom/obra-theme"]
+	path = web/themes/custom/obra-theme
+	url = https://github.com/alejandroq/obra-drupal-theme.git
