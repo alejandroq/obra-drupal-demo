@@ -83,12 +83,13 @@ bower_install() {
 theme_install()
 {
     echo "Installing Obra-Theme..."
+    cd $PROJECT_ROOT;
     git submodule init;
     git submodule update;
 
     echo "Enabling Obra-Theme as default theme (NOTE: not Admin)..."
     cd $DOCROOT_PATH;
-    drush config-set system.theme default obra-theme;
+    drush config-set system.theme default obra-theme -y;
 }
 
 theme_build()
