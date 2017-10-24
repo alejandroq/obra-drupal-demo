@@ -112,5 +112,6 @@ time site_install;
 polymer_install;
 bower_install;
 theme_install;
+theme_build;
 
 #-------------------------- END: Execution --------------------------------
