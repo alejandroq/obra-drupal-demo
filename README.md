@@ -47,6 +47,7 @@ When the automated install is complete the command line output will display the 
     - [ ] `fin init` enables theme via Drush  
 
 # Stretch Goals
+- [ ] Total Encapsulation in Docker Containers (Polymer CLI, Babel, etc)
 - [ ] QA
     - [ ] TravisCI CI/CD (Composer + Polymer)
     - [ ] SauceLabs Cross-Browser Verification

@@ -72,9 +72,31 @@ composer_install ()
   composer install
 }
 
+polymer_install() {
+    npm install -g polymer-cli;
+}
+
+bower_install() {
+    npm install -g bower;
+}
+
 theme_install()
 {
     echo "Installing Obra-Theme..."
+    git submodule init;
+    git submodule update;
+
+    echo "Enabling Obra-Theme as default theme (NOTE: not Admin)..."
+    cd $DOCROOT_PATH;
+    drush config-set system.theme default obra-theme;
+}
+
+theme_build()
+{
+    cd $DOCROOT_PATH/themes/custom/obra-theme;
+    bower-install;
+    cd $DOCROOT_PATH/themes/custom/obra-theme/elements;
+    polymer build;
 }
 
 #-------------------------- END: Functions --------------------------------
@@ -82,9 +104,12 @@ theme_install()
 #-------------------------- Execution --------------------------------
 
 # Project initialization steps
-composer_install
-fix_permissions
-init_settings
-time site_install
+composer_install;
+fix_permissions;
+init_settings;
+time site_install;
+polymer_install;
+bower_install;
+theme_install;
 
 #-------------------------- END: Execution --------------------------------
