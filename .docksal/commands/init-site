@@ -85,7 +85,8 @@ theme_install()
     echo "Installing Obra-Theme..."
     cd $PROJECT_ROOT;
     git submodule init;
-    git submodule update;
+#    git submodule update --init --;
+    git pull --recourse-submodules;
 
     echo "Enabling Obra-Theme as default theme (NOTE: not Admin)..."
     cd $DOCROOT_PATH;
