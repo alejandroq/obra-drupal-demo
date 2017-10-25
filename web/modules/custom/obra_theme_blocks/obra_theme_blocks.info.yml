@@ -1,0 +1,5 @@
+name: obra-theme-blocks
+type: module
+description: Default placement of blocks for the Obra theme.
+core: 8.x
+package: ObraTheme
