@@ -41,13 +41,16 @@ Follow [Docksal Environment Setup Instructions](http://docksal.readthedocs.io/en
 
 When the automated install is complete the command line output will display the admin username and password.
 
-# Goals
+## Goals
 - [X] Utilize Drupal Composer + Docksal for Dependency and Container management appropriately
 - [X] Setup Obra Theme via Git Submodules
     - [X] `fin init` enables theme via Drush  
 
-# Stretch Goals
+## Stretch Goals
 - [X] Total Encapsulation in Docker Containers (Polymer CLI, Babel, etc)
 - [ ] QA
     - [ ] TravisCI CI/CD (Composer + Polymer)
     - [ ] SauceLabs Cross-Browser Verification
+    
+## Known Issues
+See [Obra Theme Known Issues](https://github.com/alejandroq/obra-drupal-theme#known-issues)
